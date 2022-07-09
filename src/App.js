@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+// Crie uma class component 
+// Guarde em um state as seguintes propriedades: nome, idade, comida favorita, e uma array com pelo menos 3 músicas.
+// Renderize na tela:
+// Seu nome em um h1
+// Sua idade em um h2
+// Sua comida favorita em um h3
+// Suas músicas favoritas em uma lista (ul / ol)
+import React, { Component} from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
-export default App;
+ class Teste extends Component{
+       state={
+        nome:'Robson',
+        idade: 40,
+        comida: 'Pizza',
+        musica : ['Pelados em Santos', 'Fuscão Preto', 'Florentina']
+       };
+       render(){
+           return(
+
+              <div>
+                 <h1>Meu nome é {this.state.nome}</h1>
+                 <h2>Tenho {this.state.idade} anos</h2>
+                 <h3>Minha comida Favorita é {this.state.comida} :-)</h3>
+                 <nav>
+                  <ul>
+                    <p>Musicas Favoritas:</p>
+                    <ol>{this.state.musica[0]}</ol>
+                    <ol>{this.state.musica[1]}</ol>
+                    <ol>{this.state.musica[2]}</ol>
+                  </ul>
+                 </nav>
+                
+              </div>
+           );
+
+       }
+
+ }
+  export default Teste
