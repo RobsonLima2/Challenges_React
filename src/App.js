@@ -8,6 +8,7 @@
 import React, { Component} from 'react';
 
 
+
  class Teste extends Component{
        state={
         nome:'Robson',
@@ -22,14 +23,14 @@ import React, { Component} from 'react';
                  <h1>Meu nome é {this.state.nome}</h1>
                  <h2>Tenho {this.state.idade} anos</h2>
                  <h3>Minha comida Favorita é {this.state.comida} :-)</h3>
-                 <nav>
+                 
                   <ul>
-                    <p>Musicas Favoritas:</p>
-                    <ol>{this.state.musica[0]}</ol>
-                    <ol>{this.state.musica[1]}</ol>
-                    <ol>{this.state.musica[2]}</ol>
+                    
+                    <li>{this.state.musica[0]}</li>
+                    <li>{this.state.musica[1]}</li>
+                    <li>{this.state.musica[2]}</li>
                   </ul>
-                 </nav>
+                  
                 
               </div>
            );
