@@ -14,7 +14,8 @@ import khaki from './img/khaki.jpg'
         nome:'Robson',
         idade: 40,
         comida: 'Pizza',
-        musica : ['Pelados em Santos', 'Fuscão Preto', 'Florentina']
+        musica : ['Pelados em Santos', 'Fuscão Preto', 'Florentina'],
+        fruta : 'Caqui'
        };
        render(){
            return(
@@ -30,6 +31,7 @@ import khaki from './img/khaki.jpg'
                     <li>{this.state.musica[1]}</li>
                     <li>{this.state.musica[2]}</li>
                   </ul>
+                  <p>Minha fruta favorita:</p>
                   <img src={khaki}/>
                 
               </div>
