@@ -6,7 +6,7 @@
 // Sua comida favorita em um h3
 // Suas músicas favoritas em uma lista (ul / ol)
 import React, { Component} from 'react';
-
+import khaki from './img/khaki.jpg'
 
 
  class Teste extends Component{
@@ -30,7 +30,7 @@ import React, { Component} from 'react';
                     <li>{this.state.musica[1]}</li>
                     <li>{this.state.musica[2]}</li>
                   </ul>
-                  
+                  <img src={khaki}/>
                 
               </div>
            );
